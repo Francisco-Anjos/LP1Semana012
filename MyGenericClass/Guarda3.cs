@@ -18,6 +18,12 @@ namespace MyGenericClass
 
             return items[i];    
         }
-        
+        public void SetItem(int i, T item)
+        {
+            if (i < 0 || i > 2)
+                throw new IndexOutOfRangeException();
+
+            items[i] = item;
+        }
     }
 }
