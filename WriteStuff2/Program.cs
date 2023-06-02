@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WriteStuff1
+namespace WriteStuff2
 {
     class Program
     {
@@ -14,35 +14,28 @@ namespace WriteStuff1
 
             //name of the file chosen
             string fileName = args[0];
-            Queue<string> stringsQueue = new Queue<string>();
-
-            while (true)
-            {
-                //Reads user input every sentence
-                Console.Write("Insert a  string: ");
-                string input = Console.ReadLine();
-
-                //If there is nothing, stop program
-                if (string.IsNullOrEmpty(input))
-                break;
-
-                stringsQueue.Enqueue(input);
-            }
-
+            
             //Saves the strings into the file 
             try
-            {   
+            {
                 using (StreamWriter writer = new StreamWriter(fileName))
                 {
-                    while (stringsQueue.Count > 0)
+                    while (true)
                     {
-                        string str = stringsQueue.Dequeue();
-                        writer.WriteLine(str);
+                        Console.Write("Insert a string: ");
+                        string input = Console.ReadLine();
+
+                        if (string.IsNullOrEmpty(input))
+                            break;
+
+                        writer.WriteLine(input);
                     }
                 }
+
+                Console.WriteLine("Saved the  strings!");
             }
 
-            Console.WriteLine("Saved the  strings!");
+            
             //If it does not save
             catch (IOException e)
             {
