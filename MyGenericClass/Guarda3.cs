@@ -16,7 +16,7 @@ namespace MyGenericClass
             if (i < 0 || i > 2)
                 throw new IndexOutOfRangeException();
 
-            return items[i];
+            return items[i];    
         }
         
     }
