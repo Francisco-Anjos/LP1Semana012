@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustLikeACollection", "Just
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WriteStuff1", "WriteStuff1\WriteStuff1.csproj", "{0768ED34-B811-4E58-BBF9-7DE43FA1F7D2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WriteStuff2", "WriteStuff2\WriteStuff2.csproj", "{0B2CEF30-BF4B-408C-BF2C-9EA06249DC1D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{0768ED34-B811-4E58-BBF9-7DE43FA1F7D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0768ED34-B811-4E58-BBF9-7DE43FA1F7D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0768ED34-B811-4E58-BBF9-7DE43FA1F7D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B2CEF30-BF4B-408C-BF2C-9EA06249DC1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B2CEF30-BF4B-408C-BF2C-9EA06249DC1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B2CEF30-BF4B-408C-BF2C-9EA06249DC1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B2CEF30-BF4B-408C-BF2C-9EA06249DC1D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
